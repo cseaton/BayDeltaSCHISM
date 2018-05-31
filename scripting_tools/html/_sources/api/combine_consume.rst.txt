@@ -1,0 +1,7 @@
+combine\_consume module
+=======================
+
+.. automodule:: combine_consume
+    :members:
+    :undoc-members:
+    :show-inheritance:

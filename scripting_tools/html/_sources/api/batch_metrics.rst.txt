@@ -1,0 +1,7 @@
+batch\_metrics module
+=====================
+
+.. automodule:: batch_metrics
+    :members:
+    :undoc-members:
+    :show-inheritance:

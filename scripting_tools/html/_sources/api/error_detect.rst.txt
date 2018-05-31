@@ -1,0 +1,7 @@
+error\_detect module
+====================
+
+.. automodule:: error_detect
+    :members:
+    :undoc-members:
+    :show-inheritance:

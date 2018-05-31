@@ -1,0 +1,7 @@
+embed\_raster module
+====================
+
+.. automodule:: embed_raster
+    :members:
+    :undoc-members:
+    :show-inheritance:

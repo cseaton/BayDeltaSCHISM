@@ -1,0 +1,7 @@
+prepare\_schism module
+======================
+
+.. automodule:: prepare_schism
+    :members:
+    :undoc-members:
+    :show-inheritance:

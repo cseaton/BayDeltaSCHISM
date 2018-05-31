@@ -1,0 +1,7 @@
+write\_ts module
+================
+
+.. automodule:: write_ts
+    :members:
+    :undoc-members:
+    :show-inheritance:

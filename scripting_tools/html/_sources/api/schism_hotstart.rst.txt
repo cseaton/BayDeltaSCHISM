@@ -1,0 +1,7 @@
+schism\_hotstart module
+=======================
+
+.. automodule:: schism_hotstart
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+laplace\_smooth\_data module
+============================
+
+.. automodule:: laplace_smooth_data
+    :members:
+    :undoc-members:
+    :show-inheritance:

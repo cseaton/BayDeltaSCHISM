@@ -1,0 +1,7 @@
+nwis\_download module
+=====================
+
+.. automodule:: nwis_download
+    :members:
+    :undoc-members:
+    :show-inheritance:

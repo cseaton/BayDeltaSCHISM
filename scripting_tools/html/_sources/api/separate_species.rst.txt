@@ -1,0 +1,7 @@
+separate\_species module
+========================
+
+.. automodule:: separate_species
+    :members:
+    :undoc-members:
+    :show-inheritance:

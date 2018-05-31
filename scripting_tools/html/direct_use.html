@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Using Python Pre-processing Tools Directly &#8212; SCHISM Python Tools</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License and Disclaimer" href="license_and_disclaimer.html" />
+    <link rel="prev" title="Performance Eval and Tuning" href="performance.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo6.png" border="0" alt="Bay-Delta SELFE Tools"/></a>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="license_and_disclaimer.html" title="License and Disclaimer"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="performance.html" title="Performance Eval and Tuning"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/dwr_logo_small.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Using Python Pre-processing Tools Directly</a><ul>
+<li><a class="reference internal" href="#reading-a-mesh-in-gr3">Reading a Mesh in GR3</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="performance.html"
+                        title="previous chapter">Performance Eval and Tuning</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="license_and_disclaimer.html"
+                        title="next chapter">License and Disclaimer</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="using-python-pre-processing-tools-directly">
+<h1>Using Python Pre-processing Tools Directly<a class="headerlink" href="#using-python-pre-processing-tools-directly" title="Permalink to this headline">¶</a></h1>
+<p>If users are familiar with Python, various jobs with SCHISM meshes can be done by programming functions in the tool directly.</p>
+<div class="section" id="reading-a-mesh-in-gr3">
+<h2>Reading a Mesh in GR3<a class="headerlink" href="#reading-a-mesh-in-gr3" title="Permalink to this headline">¶</a></h2>
+<p>The first step to manipulate or do jobs with a mesh is reading in a mesh. A mesh can be read in with <code class="xref py py-meth docutils literal"><span class="pre">load_gr3()</span></code>. This function returns a SELFE input instance. A mesh is an attribute of the SCHISM input class, and the mesh can be accessed by <code class="xref py py-attr docutils literal"><span class="pre">mesh</span></code>. This mesh is an instance of <code class="xref py py-class docutils literal"><span class="pre">SelfeMesh</span></code> which is in turn an extension of <code class="xref py py-class docutils literal"><span class="pre">TriMesh</span></code>. TriMesh is a slimmed version of ‘trigrid’ by Rusty Collerman with some modifications. See the API references for methods.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="license_and_disclaimer.html" title="License and Disclaimer"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="performance.html" title="Performance Eval and Tuning"
+             >previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, California Department of Water Resources.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

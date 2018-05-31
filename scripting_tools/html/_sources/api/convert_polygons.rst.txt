@@ -1,0 +1,7 @@
+convert\_polygons module
+========================
+
+.. automodule:: convert_polygons
+    :members:
+    :undoc-members:
+    :show-inheritance:

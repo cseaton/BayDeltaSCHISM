@@ -1,0 +1,7 @@
+metricsplot module
+==================
+
+.. automodule:: metricsplot
+    :members:
+    :undoc-members:
+    :show-inheritance:

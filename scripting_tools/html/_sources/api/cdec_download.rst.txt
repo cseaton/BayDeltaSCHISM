@@ -1,0 +1,7 @@
+cdec\_download module
+=====================
+
+.. automodule:: cdec_download
+    :members:
+    :undoc-members:
+    :show-inheritance:

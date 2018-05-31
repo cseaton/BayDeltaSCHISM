@@ -1,0 +1,7 @@
+sms2gr3 module
+==============
+
+.. automodule:: sms2gr3
+    :members:
+    :undoc-members:
+    :show-inheritance:

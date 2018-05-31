@@ -1,0 +1,7 @@
+prepare\_bayonly module
+=======================
+
+.. automodule:: prepare_bayonly
+    :members:
+    :undoc-members:
+    :show-inheritance:

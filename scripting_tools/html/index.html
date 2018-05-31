@@ -1,0 +1,176 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bay-Delta SCHISM Toolset &#8212; SCHISM Python Tools</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="introduction.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="#"><img src="_static/logo6.png" border="0" alt="Bay-Delta SELFE Tools"/></a>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/dwr_logo_small.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Bay-Delta SCHISM Toolset</a><ul>
+<li><a class="reference internal" href="#contents">Contents</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="introduction.html"
+                        title="next chapter">Introduction</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="bay-delta-schism-toolset">
+<span id="tools-home"></span><h1>Bay-Delta SCHISM Toolset<a class="headerlink" href="#bay-delta-schism-toolset" title="Permalink to this headline">¶</a></h1>
+<p>This toolset is designed to help to pre- and post-process SCHISM
+simulations more easily. In particular, the tools allow you
+to specify things like boundaries and hydraulic structures using
+geophysical coordinates rather than node/element numbers … this
+can greatly simplify the work involved when the mesh is revised.</p>
+<p>Please direct questions, suggestions or bug reports to
+<a class="reference external" href="mailto:eli&#37;&#52;&#48;water&#46;ca&#46;gov">eli<span>&#64;</span>water<span>&#46;</span>ca<span>&#46;</span>gov</a> or <a class="reference external" href="mailto:knam&#37;&#52;&#48;water&#46;ca&#46;gov">knam<span>&#64;</span>water<span>&#46;</span>ca<span>&#46;</span>gov</a>.</p>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#installing-the-toolset">Installing the toolset</a></li>
+<li class="toctree-l2"><a class="reference internal" href="introduction.html#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="preprocessing.html">Pre-processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="preprocessing.html#invoking-the-preprocessor">Invoking the preprocessor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preprocessing.html#input-files">Input Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sms.html">Working with SMS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="sms.html#converting-an-sms-mesh-2dm-file-to-gr3">Converting an SMS mesh (2dm) file to gr3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sms.html#getting-sms-polygons-for-preprocessor">Getting SMS Polygons for Preprocessor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="sms.html#visualizing-detailed-bathymetry-inside-sms">Visualizing detailed bathymetry inside SMS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="model_time.html">Model time</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="model_time.html#model-time-py">model_time.py</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="depth.html">Populating Elevation/Depth Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="depth.html#assigning-depths-from-prioritized-dems">Assigning depths from prioritized DEMs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="depth.html#smoother-for-complex-topography">Smoother for complex topography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="depth.html#optimizing-depths-for-volume">Optimizing depths for volume</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="postprocessing.html">Post-processing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="postprocessing.html#station-output-extractor">Station Output Extractor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="postprocessing.html#extracting-data-from-binary-outputs">Extracting Data from Binary outputs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="performance.html">Evaluating Model Performance</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="performance.html#subcycling-analysis">Subcycling analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="performance.html#plotting-model-performance">Plotting model performance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="direct_use.html">Using Python Pre-processing Script Programatically</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="direct_use.html#reading-a-mesh-in-gr3">Reading a Mesh in GR3</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="license_and_disclaimer.html">License</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="introduction.html" title="Introduction"
+             >next</a> |</li>
+        <li><a href="#">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, California Department of Water Resources.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

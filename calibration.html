@@ -1,0 +1,161 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Calibration and Versioning &#8212; Bay-Delta SCHISM</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Training" href="help.html" />
+    <link rel="prev" title="Getting Started" href="getmodel.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo6.png" border="0" alt="Bay-Delta SCHISM"/></a>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="help.html" title="Training"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="getmodel.html" title="Getting Started"
+             accesskey="P">previous</a> |</li> 
+        <li><a href="http://baydeltaoffice.water.ca.gov/modeling/deltamodeling"> Delta Modeling Section</a>|&nbsp;</li>
+        <li><a href="index.html">Project home</a>|&nbsp;</li>
+        <li><a href="search.html">Search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/dwr_logo_small.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Calibration and Versioning</a><ul>
+<li><a class="reference internal" href="#calibration">Calibration</a></li>
+<li><a class="reference internal" href="#versioning">Versioning</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="getmodel.html"
+                        title="previous chapter">Getting Started</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="help.html"
+                        title="next chapter">Training</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/calibration.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="calibration-and-versioning">
+<h1>Calibration and Versioning<a class="headerlink" href="#calibration-and-versioning" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="calibration">
+<h2>Calibration<a class="headerlink" href="#calibration" title="Permalink to this headline">¶</a></h2>
+<p>The main source of information about our calibration thus far is
+the draft
+<a class="reference external" href="https://msb.water.ca.gov/documents/86683/266737/annual_report_2014_ch7_draft.pdf">2014 Annual Report Chapter 7</a>
+on SELFE. A more detailed report is forthcoming. For those interested in results from August 2013-2014 drought modelling,
+we can offer time series results at most stations of interest and are working on a presentation.</p>
+<p>The August-January 2013 part of this simulation was heavily scrutinized
+and certainly does not qualify as “validation quality” result.
+The rest of the run is pretty hot off the press
+and we were satisfied with the results except in a few locations. The strengths and
+weaknesses of the results are similar to those described in the Annual Report Chapter.
+Some steps were needed to prevent overintrusion of salt into the Delta. These will
+be described fully in the more detailed report.</p>
+<p>So far we have modeled 2009-2010, Winter 2010-2011 (Bay only) and late 2013-2014. Except for early 2011, these periods mainly reflect low flow periods. Right now we are working on the flooding period of 1997.</p>
+<p>In a companion project, we have worked with contractors at RMA in the last two years producing Python tools for harvesting cross-sectional velocity data from ADCP instruments. Our goal with that project is to leverage information that is already being produced during flow station calibrations and special studies to better understand cross-sectional variation in velocity structure and compare it to model results. The project <a class="reference external" href="https://github.com/esatel/ADCPy">ADCPy</a> has been open-sourced, and is functional and documented for downward looking RDI flow instruments, which are the main ones used by both USGS and DWR for flow calibration. We have some usability enhancements in mind for the next year, and are adding additional instruments (RiverRay, SL-ADCP).</p>
+</div>
+<div class="section" id="versioning">
+<h2>Versioning<a class="headerlink" href="#versioning" title="Permalink to this headline">¶</a></h2>
+<p>At the present rate, we are updating the mesh approximately 2-3 times per year.
+In 2015, we expect announcement of two improvements: improved efficiency from
+vertical coordinates and quadrilaterals. We also are looking forward to a greater
+consistency between the OHSU and VIMS branches of SELFE and a transition to the
+GNU Public License.
+Each version of the model, inputs and mesh will be carefully
+marked so that archivable and reproducible
+simulations are possible. We will maintain a Bay-Delta user list and will gladly
+inform you of new versions. Tell us who you are!</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="help.html" title="Training"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="getmodel.html" title="Getting Started"
+             >previous</a> |</li> 
+        <li><a href="http://baydeltaoffice.water.ca.gov/modeling/deltamodeling"> Delta Modeling Section</a>|&nbsp;</li>
+        <li><a href="index.html">Project home</a>|&nbsp;</li>
+        <li><a href="search.html">Search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, California Department of Water Resources.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

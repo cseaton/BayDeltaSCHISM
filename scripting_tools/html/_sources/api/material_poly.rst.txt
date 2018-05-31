@@ -1,0 +1,7 @@
+material\_poly module
+=====================
+
+.. automodule:: material_poly
+    :members:
+    :undoc-members:
+    :show-inheritance:

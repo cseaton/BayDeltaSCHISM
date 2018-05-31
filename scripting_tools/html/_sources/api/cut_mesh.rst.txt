@@ -1,0 +1,7 @@
+cut\_mesh module
+================
+
+.. automodule:: cut_mesh
+    :members:
+    :undoc-members:
+    :show-inheritance:

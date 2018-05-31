@@ -1,0 +1,7 @@
+schism\_linestring module
+=========================
+
+.. automodule:: schism_linestring
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+split\_quad module
+==================
+
+.. automodule:: split_quad
+    :members:
+    :undoc-members:
+    :show-inheritance:

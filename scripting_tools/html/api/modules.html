@@ -1,0 +1,167 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pyschism &#8212; SCHISM Python Tools</title>
+    <link rel="stylesheet" href="../_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="../index.html"><img src="../_static/logo6.png" border="0" alt="Bay-Delta SELFE Tools"/></a>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../index.html">home</a>|&nbsp;</li>
+        <li><a href="../search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/dwr_logo_small.png" alt="Logo"/>
+            </a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="pyschism">
+<h1>pyschism<a class="headerlink" href="#pyschism" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="InputParser.html">InputParser module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="base_io.html">base_io module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="batch_metrics.html">batch_metrics module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bay_delta_hotstart.html">bay_delta_hotstart module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cdec_download.html">cdec_download module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cencoos_download.html">cencoos_download module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="check_mesh_skewness.html">check_mesh_skewness module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="clip_dems.html">clip_dems module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="combine_consume.html">combine_consume module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contour_smooth.html">contour_smooth module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="convert_linestrings.html">convert_linestrings module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="convert_mesh.html">convert_mesh module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="convert_polygons.html">convert_polygons module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="convert_sav_class_to_number.html">convert_sav_class_to_number module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_mesh_n_levels.html">create_mesh_n_levels module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="create_vgrid_lsc2.html">create_vgrid_lsc2 module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cut_mesh.html">cut_mesh module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dicu_schism.html">dicu_schism module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="embed_raster.html">embed_raster module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="error_detect.html">error_detect module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="expand_th.html">expand_th module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gaussian_quadrature.html">gaussian_quadrature module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gen_elev2D.html">gen_elev2D module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gen_nu_in.html">gen_nu_in module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gr3.html">gr3 module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grid_opt.html">grid_opt module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hotstart_generator.html">hotstart_generator module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interpolate_hotstart.html">interpolate_hotstart module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="laplace_smooth_data.html">laplace_smooth_data module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lsc2.html">lsc2 module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_poly.html">material_poly module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metricsplot.html">metricsplot module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="model_time.html">model_time module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="noaa_download.html">noaa_download module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="numlayer.html">numlayer module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nwis_download.html">nwis_download module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="obs_links.html">obs_links module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plot_default_formats.html">plot_default_formats module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="polygons.html">polygons module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepare_bayonly.html">prepare_bayonly module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepare_schism.html">prepare_schism module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="priority_queue.html">priority_queue module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="read_output_xyt.html">read_output_xyt module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="read_ts.html">read_ts module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remove_bad_tvd_cells.html">remove_bad_tvd_cells module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_hotstart.html">schism_hotstart module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_input.html">schism_input module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_linestring.html">schism_linestring module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_mesh.html">schism_mesh module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_polygon.html">schism_polygon module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_setup.html">schism_setup module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_source.html">schism_source module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_structure.html">schism_structure module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_vertical_mesh.html">schism_vertical_mesh module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schism_yaml.html">schism_yaml module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="separate_species.html">separate_species module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="simulation_timing.html">simulation_timing module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sms2gr3.html">sms2gr3 module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="split_quad.html">split_quad module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stacked_dem_fill.html">stacked_dem_fill module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="station_db.html">station_db module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="station_extractor.html">station_extractor module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="subcycle_analyzer.html">subcycle_analyzer module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="trimesh.html">trimesh module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="triquadmesh.html">triquadmesh module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unit_conversions.html">unit_conversions module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vgrid_opt2.html">vgrid_opt2 module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wdl_download.html">wdl_download module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="write_ts.html">write_ts module</a></li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../index.html">home</a>|&nbsp;</li>
+        <li><a href="../search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, California Department of Water Resources.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

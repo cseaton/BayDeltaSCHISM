@@ -1,0 +1,7 @@
+schism\_mesh module
+===================
+
+.. automodule:: schism_mesh
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,7 @@
+base\_io module
+===============
+
+.. automodule:: base_io
+    :members:
+    :undoc-members:
+    :show-inheritance:

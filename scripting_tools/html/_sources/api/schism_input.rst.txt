@@ -1,0 +1,7 @@
+schism\_input module
+====================
+
+.. automodule:: schism_input
+    :members:
+    :undoc-members:
+    :show-inheritance:

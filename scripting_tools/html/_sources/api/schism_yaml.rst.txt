@@ -1,0 +1,7 @@
+schism\_yaml module
+===================
+
+.. automodule:: schism_yaml
+    :members:
+    :undoc-members:
+    :show-inheritance:

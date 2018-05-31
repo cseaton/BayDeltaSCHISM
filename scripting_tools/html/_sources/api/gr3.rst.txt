@@ -1,0 +1,7 @@
+gr3 module
+==========
+
+.. automodule:: gr3
+    :members:
+    :undoc-members:
+    :show-inheritance:

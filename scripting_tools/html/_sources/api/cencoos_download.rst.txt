@@ -1,0 +1,7 @@
+cencoos\_download module
+========================
+
+.. automodule:: cencoos_download
+    :members:
+    :undoc-members:
+    :show-inheritance:

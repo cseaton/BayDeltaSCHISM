@@ -1,0 +1,132 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Post-processing &#8212; SCHISM Python Tools</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Performance Eval and Tuning" href="performance.html" />
+    <link rel="prev" title="Assigning bathymetry" href="depth.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo6.png" border="0" alt="Bay-Delta SELFE Tools"/></a>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="performance.html" title="Performance Eval and Tuning"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="depth.html" title="Assigning bathymetry"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/dwr_logo_small.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Post-processing</a><ul>
+<li><a class="reference internal" href="#station-output-extractor">Station Output Extractor</a></li>
+<li><a class="reference internal" href="#extracting-data-from-binary-outputs">Extracting Data from Binary outputs</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="depth.html"
+                        title="previous chapter">Assigning bathymetry</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="performance.html"
+                        title="next chapter">Performance Eval and Tuning</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="post-processing">
+<h1>Post-processing<a class="headerlink" href="#post-processing" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="station-output-extractor">
+<h2>Station Output Extractor<a class="headerlink" href="#station-output-extractor" title="Permalink to this headline">¶</a></h2>
+<p>SELFE can write outputs of certain model variables at given positions at every given time interval in a plain text format. The files of these outputs resides in ‘outputs’ directory under a study directory. File names of the outputs are named from ‘staout_1’ to ‘staout_9,’ and the files corresponds to surface elevation, air pressure, wind velocity in x- and y-direction, temperature, salinity, and velocity in x-, y-, and z-direction respectively. The positions of outputs are requested in ‘station.in’ in the study directory.</p>
+<p>The station output extractor makes it easy to read these standard output files. It returns Vtools time series objects, which can be analyzed and plotted with some simple recipes.</p>
+</div>
+<div class="section" id="extracting-data-from-binary-outputs">
+<h2>Extracting Data from Binary outputs<a class="headerlink" href="#extracting-data-from-binary-outputs" title="Permalink to this headline">¶</a></h2>
+<p>Another way to extract values out of SELFE runs is extracting values from raw binary outputs. The upside of this approach is that users can extract anywhere they want after a run is finished if binary outputs are written, combined, and stored. The downside is the binary files are huge and possibly time-consuming. Extracting data from binary files currently relies on SELFE’s own FORTRAN scripts.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="performance.html" title="Performance Eval and Tuning"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="depth.html" title="Assigning bathymetry"
+             >previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, California Department of Water Resources.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

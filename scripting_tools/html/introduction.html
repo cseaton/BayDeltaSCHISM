@@ -1,0 +1,142 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Introduction &#8212; SCHISM Python Tools</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preprocessing" href="preprocessing.html" />
+    <link rel="prev" title="Bay-Delta SCHISM Toolset" href="index.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo6.png" border="0" alt="Bay-Delta SELFE Tools"/></a>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="preprocessing.html" title="Preprocessing"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Bay-Delta SCHISM Toolset"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/dwr_logo_small.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Introduction</a><ul>
+<li><a class="reference internal" href="#installing-the-toolset">Installing the toolset</a></li>
+<li><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Bay-Delta SCHISM Toolset</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="preprocessing.html"
+                        title="next chapter">Preprocessing</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="installing-the-toolset">
+<h2>Installing the toolset<a class="headerlink" href="#installing-the-toolset" title="Permalink to this headline">¶</a></h2>
+<p>This tool comes with the Bay-Delta modeling package as a ‘scripts’ directory.
+No installation or compilation is required, but users need to add the ‘scripts’ directory onto their ‘PYTHONPATH’ environment variable for Python to be able to find the scripts directory. It is also possible to add the directory to your PATH environment variable so that you can launch the scripts without typing ‘python’.</p>
+</div>
+<div class="section" id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
+<p>The tools are written in Python, and there are a few Python prerequisites.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://www.python.org/">Python</a>: To run this tool, Python is required because Python is . The tool is written in and developed under Python ver 2.7. Using a scientific python distribution such as <a class="reference external" href="https://code.google.com/p/pythonxy/">pythonxy</a> or <a class="reference external" href="https://store.continuum.io/cshop/anaconda">Anaconda</a> is strongly recommended because they come with most of prerequisites listed below.</li>
+<li>Vtools: Most of the time series management is done with Vtools. Refer to Vtools documentations for details. Vtools has its own dependencies that are not listed here.</li>
+<li><a class="reference external" href="http::/www.numpy.org/">Numpy</a>:  Numpy is a Python package for scientific computing. Ver 1.8 is used for the development. Vtools requires Numpy as well.</li>
+<li><a class="reference external" href="http://matplotlib.org/">Matplotlib</a>: Matplotlib is a Python plotting package. Ver 1.3 is used for the development. Vtools uses Matplotlib as well.</li>
+<li><a class="reference external" href="https://github.com/jiffyclub/brewer2mpl">Brewer2mpl</a>: This is a a python package to access colorbrewer2.org color map. The color map provides nice sets of color palettes for plotting.</li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/Rtree/">Rtree</a>: Rtree is a ctypes Python wrapper of libspatialindex that provides a number of advanced spatial indexing features. <a class="reference external" href="http://libspatialindex.github.io/">libspatialindex</a> is C++ library for spatial index, and it must be installed before installing Python Rtree package. This library is used to geometrical indexing of a mesh in the pre-processing.</li>
+<li><a class="reference external" href="http://www.gdal.org/">GDAL</a>: A part of the tools uses Python package of GDAL: Geospatial Data Abstraction Library. This Python package depends on libgdal.</li>
+<li><a class="reference external" href="http://dzhelil.info/triangle/">triangle</a>: Python Triangle is a python wrapper of Jonathan Richard Shewchuk’s two-dimensional quality mesh generator and Delaunay triangulation library.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="preprocessing.html" title="Preprocessing"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Bay-Delta SCHISM Toolset"
+             >previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, California Department of Water Resources.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

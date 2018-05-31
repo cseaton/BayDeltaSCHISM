@@ -1,0 +1,7 @@
+read\_ts module
+===============
+
+.. automodule:: read_ts
+    :members:
+    :undoc-members:
+    :show-inheritance:

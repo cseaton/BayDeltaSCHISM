@@ -1,0 +1,7 @@
+hotstart\_generator module
+==========================
+
+.. automodule:: hotstart_generator
+    :members:
+    :undoc-members:
+    :show-inheritance:

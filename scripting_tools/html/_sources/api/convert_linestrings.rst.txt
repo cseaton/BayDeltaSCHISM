@@ -1,0 +1,7 @@
+convert\_linestrings module
+===========================
+
+.. automodule:: convert_linestrings
+    :members:
+    :undoc-members:
+    :show-inheritance:

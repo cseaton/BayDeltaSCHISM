@@ -1,0 +1,7 @@
+plot\_default\_formats module
+=============================
+
+.. automodule:: plot_default_formats
+    :members:
+    :undoc-members:
+    :show-inheritance:

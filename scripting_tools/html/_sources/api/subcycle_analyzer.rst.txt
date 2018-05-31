@@ -1,0 +1,7 @@
+subcycle\_analyzer module
+=========================
+
+.. automodule:: subcycle_analyzer
+    :members:
+    :undoc-members:
+    :show-inheritance:

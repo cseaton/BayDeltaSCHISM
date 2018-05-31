@@ -1,0 +1,7 @@
+dicu\_schism module
+===================
+
+.. automodule:: dicu_schism
+    :members:
+    :undoc-members:
+    :show-inheritance:

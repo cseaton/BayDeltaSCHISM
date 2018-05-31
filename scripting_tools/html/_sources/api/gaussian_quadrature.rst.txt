@@ -1,0 +1,7 @@
+gaussian\_quadrature module
+===========================
+
+.. automodule:: gaussian_quadrature
+    :members:
+    :undoc-members:
+    :show-inheritance:

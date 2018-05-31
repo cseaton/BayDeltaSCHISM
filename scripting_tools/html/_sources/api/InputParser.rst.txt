@@ -1,0 +1,7 @@
+InputParser module
+==================
+
+.. automodule:: InputParser
+    :members:
+    :undoc-members:
+    :show-inheritance:

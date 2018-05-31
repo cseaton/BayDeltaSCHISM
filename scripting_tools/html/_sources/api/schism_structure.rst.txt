@@ -1,0 +1,7 @@
+schism\_structure module
+========================
+
+.. automodule:: schism_structure
+    :members:
+    :undoc-members:
+    :show-inheritance:

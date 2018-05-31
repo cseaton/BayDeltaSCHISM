@@ -1,0 +1,178 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Working with SMS &#8212; SCHISM Python Tools</title>
+    <link rel="stylesheet" href="_static/sphinxdoc.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Model time conversion" href="model_time.html" />
+    <link rel="prev" title="Preprocessing" href="preprocessing.html" /> 
+  </head>
+  <body>
+
+<div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+<a href="index.html"><img src="_static/logo6.png" border="0" alt="Bay-Delta SELFE Tools"/></a>
+</div>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="model_time.html" title="Model time conversion"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="preprocessing.html" title="Preprocessing"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="index.html">
+              <img class="logo" src="_static/dwr_logo_small.png" alt="Logo"/>
+            </a></p>
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Working with SMS</a><ul>
+<li><a class="reference internal" href="#converting-an-sms-mesh-2dm-file-to-gr3">Converting an SMS mesh (2dm) file to gr3</a><ul>
+<li><a class="reference internal" href="#sms2gr3-py">sms2gr3.py</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#getting-sms-polygons-for-preprocessor">Getting SMS Polygons for Preprocessor</a><ul>
+<li><a class="reference internal" href="#material-poly-py">material_poly.py</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#visualizing-detailed-bathymetry-inside-sms">Visualizing detailed bathymetry inside SMS</a><ul>
+<li><a class="reference internal" href="#clip-dems-py">clip_dems.py</a></li>
+<li><a class="reference internal" href="#stacked-dem-fill-py">stacked_dem_fill.py</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="preprocessing.html"
+                        title="previous chapter">Preprocessing</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="model_time.html"
+                        title="next chapter">Model time conversion</a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="working-with-sms">
+<h1>Working with SMS<a class="headerlink" href="#working-with-sms" title="Permalink to this headline">¶</a></h1>
+<p>The preprocessing toolkit has some utilities that can help when working with
+Aquaveo SMS, the main form of mesh generation we use until we are
+able to distrubute a sufficient open source mesh generator.</p>
+<div class="section" id="converting-an-sms-mesh-2dm-file-to-gr3">
+<h2>Converting an SMS mesh (2dm) file to gr3<a class="headerlink" href="#converting-an-sms-mesh-2dm-file-to-gr3" title="Permalink to this headline">¶</a></h2>
+<p>The script that converts SMS mesh to SELFE gr3 format is available as a standalone script.</p>
+<div class="section" id="sms2gr3-py">
+<h3>sms2gr3.py<a class="headerlink" href="#sms2gr3-py" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="getting-sms-polygons-for-preprocessor">
+<h2>Getting SMS Polygons for Preprocessor<a class="headerlink" href="#getting-sms-polygons-for-preprocessor" title="Permalink to this headline">¶</a></h2>
+<p>SMS is able to create mesh coverages that are not mesh generation hints, including
+spatial properties maps whose polygons have “material properties”. If you save the
+coverage as a polygon shapefile, the script <em>material_poly.py</em> can help convert the
+resulting shapefile to the preprocessor yaml format. At the time of writing we do
+not have a tutorial example of this process.s</p>
+<div class="section" id="material-poly-py">
+<h3>material_poly.py<a class="headerlink" href="#material-poly-py" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="visualizing-detailed-bathymetry-inside-sms">
+<h2>Visualizing detailed bathymetry inside SMS<a class="headerlink" href="#visualizing-detailed-bathymetry-inside-sms" title="Permalink to this headline">¶</a></h2>
+<p>Earlier versions (before 11.2) of SMS had bugs causing incorrect georefercing of DEMs
+and very poor memory management. It was – and probably still is – impossible
+to efficiently assign elevations within the software for a large mesh. We have two scripts
+that were designed to help with this problem: <em>clip_dems.py</em> and <em>stacked_dem_fill.py</em>.</p>
+<div class="section" id="clip-dems-py">
+<h3>clip_dems.py<a class="headerlink" href="#clip-dems-py" title="Permalink to this headline">¶</a></h3>
+<p>The script clip_dems.py is used to create mini-DEMs on the fly that are small
+enough to be brought into the SMS environment as rasters without slowing it down too much.
+The same The:ref:<cite>dem_list_file</cite> is used here as elsewhere in the pre-processor.</p>
+<p>The normal pattern of work is to zoom into the area of interst in SMS, save the
+work area as a jpeg image and use it as the -image argument to <em>clip_dems.py</em>.
+One cut DEM will be produced for each DEM on the <em>dem_list</em> file that intersects the
+work area, using file names in order of priority (0 highest). The cut DEMs would then
+be imported and visualized in SMS, ideally using “contours” as the viewing choice and a carefully crafted color map designed to focus on the elevations that are locally most important.</p>
+</div>
+<div class="section" id="stacked-dem-fill-py">
+<h3>stacked_dem_fill.py<a class="headerlink" href="#stacked-dem-fill-py" title="Permalink to this headline">¶</a></h3>
+<p>The script stacked_dem_fill.py is the one we use to populate a mesh with elevations.
+It can be used on a 2dm file in which case the</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="model_time.html" title="Model time conversion"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="preprocessing.html" title="Preprocessing"
+             >previous</a> |</li>
+        <li><a href="index.html">home</a>|&nbsp;</li>
+        <li><a href="search.html">search</a>|&nbsp;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2014, California Department of Water Resources.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

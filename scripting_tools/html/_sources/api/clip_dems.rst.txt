@@ -1,0 +1,7 @@
+clip\_dems module
+=================
+
+.. automodule:: clip_dems
+    :members:
+    :undoc-members:
+    :show-inheritance:

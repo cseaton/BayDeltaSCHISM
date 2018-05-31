@@ -1,0 +1,7 @@
+contour\_smooth module
+======================
+
+.. automodule:: contour_smooth
+    :members:
+    :undoc-members:
+    :show-inheritance:
